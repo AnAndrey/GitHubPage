@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+#container {
+  padding: 1em;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.data_section {
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #eee;
+  display: block;
+  max-width: 500px;
+  padding: 1em!important;
+  margin-top: 1em!important;
+}
+
+.form__input2 {
+    width: 60px;
+}
