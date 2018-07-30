@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LiveChat extenstion example!</title>
+    <meta name="description" content="Invoice extension for LiveChat">
+    <meta name="widgetName" content="Invoice extension for LiveChat">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="//cdn.livechatinc.com/boilerplate/1.1.css">
+    <script src="/client.js"></script>
+  </head>
+  <body>
+    <div id="container">
+    <main>
+      <section class="data_section">
+         <h3>Specify price and product description</h3>
+          <form class="form">
+          <p class="form__p">
+            <label class="form__label" for="productPrice">Price</label>
+            <input type="text" class="form__input2" id="productPrice">
+            <!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
+          </p>
+          <p class="form__p">
+            <label class="form__label" for="productDescription">Description</label>
+            <textarea class="form__textarea" id="productDescription"></textarea>
+          </p>  
+          <p class="form__cta">
+            <span class="button yellow" onclick="invoiceFunction();"><span>Invoice</span></span>
+            <span class="cancel" onclick="clearFunction();">or <a>clear</a></span>
+          </p>
+        </form>
+      </section>
+    </main>
+    </div>
+  </body>
+</html>
