@@ -15,7 +15,7 @@ function invoiceFunction()
 {
   var message = { 
 	  description: document.getElementById("productDescription").value, 
-	  price: document.getElementById("productPrice").value
+	  price: document.getElementById("productPrice").value,
 	  deliveryTime: document.getElementById("deliveryTime").value};
 	  
   putMessage(JSON.stringify(message));
