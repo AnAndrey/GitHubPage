@@ -8,11 +8,16 @@ function clearFunction()
 {
   document.getElementById("productPrice").value = "";
   document.getElementById("productDescription").value = "";
+  document.getElementById("deliveryTime").value = "";
 }
 
 function invoiceFunction()
 {
-  var message = { description: document.getElementById("productDescription").value, price: document.getElementById("productPrice").value};
+  var message = { 
+	  description: document.getElementById("productDescription").value, 
+	  price: document.getElementById("productPrice").value
+	  deliveryTime: document.getElementById("deliveryTime").value};
+	  
   putMessage(JSON.stringify(message));
 }
 
