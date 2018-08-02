@@ -15,27 +15,44 @@
     <div id="container">
     <main>
       <section class="data_section">
-         <h3>Specify price and product description</h3>
-          <form class="form">
-          <p class="form__p">
-            <label class="form__label" for="productPrice">Price</label>
-            <input type="text" class="form__input2" id="productPrice">
-            <!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
-          </p>
-		  <p class="form__p">
-            <label class="form__label" for="deliveryTime">Delivery time</label>
-            <input type="text" class="form__input" id="deliveryTime">
-            <!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
-          </p>
-          <p class="form__p">
-            <label class="form__label" for="productDescription">Description</label>
-            <textarea class="form__textarea" id="productDescription"></textarea>
-          </p>  
-          <p class="form__cta">
-            <span class="button yellow" onclick="invoiceFunction();"><span>Invoice</span></span>
-            <span class="cancel" onclick="clearFunction();">or <a>clear</a></span>
-          </p>
-        </form>
+        <h3>Order section</h3>
+		<form class="form">
+			  <p class="form__p">
+				<label class="form__label" for="productPrice">Price</label>
+				<input type="text" class="form__input2" id="productPrice">
+				<!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
+			  </p>
+			  <p class="form__p">
+				<label class="form__label" for="deliveryTime">Delivery time</label>
+				<input type="text" class="form__input" id="deliveryTime">
+				<!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
+			  </p>
+			  <p class="form__p">
+				<label class="form__label" for="productDescription">Description</label>
+				<textarea class="form__textarea" id="productDescription"></textarea>
+			  </p>  
+			  <p class="form__cta">
+				<span class="button yellow" onclick="invoiceFunction();"><span>Invoice</span></span>
+				<span class="cancel" onclick="clearFunction();">or <a>clear</a></span>
+			  </p>
+		</form>
+		<h3>Delivery section</h3>
+		<form class="form">
+			<p class="form__p">
+				<label class="form__label" for="trackingNumber">Tracking number</label>
+				<input type="text" class="form__input" id="trackingNumber">				
+			<!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
+			</p>
+			<p class="form__cta">
+				<span class="button yellow" onclick="onTrackingNumber();"><span>Ok</span></span>				
+			</p>
+		</form>		
+		<!--h3>Feedback section</h3-->
+		<form class="form">
+			<p class="form__cta">
+				<span class="button blue" onclick="onFeedbackRequest();"><span>Feedback request</span></span>				
+			</p>
+		</form>	
       </section>
     </main>
     </div>
