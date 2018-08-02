@@ -13,17 +13,17 @@ function clearFunction()
 
 function invoiceFunction()
 {
-  var message = { type: "invoice",
-	  info:[{ 
-	  description: document.getElementById("productDescription").value, 
-	  price: document.getElementById("productPrice").value,
-	 deliveryTime: document.getElementById("deliveryTime").value}]};
+  var message = { type: "invoice"};
+  message.info = { description: document.getElementById("productDescription").value, 
+				  price: document.getElementById("productPrice").value,
+				  deliveryTime: document.getElementById("deliveryTime").value};
 	  
   putMessage(JSON.stringify(message));
 }
 
 function onTrackingNumber(){
-	var message = { type: "tracking", info: [{ trackingNumber: document.getElementById("trackingNumber").value}]};
+	var message = { type: "tracking"};
+	message.info = { trackingNumber: document.getElementById("trackingNumber").value};
 	putMessage(JSON.stringify(message));
 }
 
