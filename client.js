@@ -19,6 +19,12 @@ function invoiceFunction()
 	  alert("The price field must be filled out");
 	  return;
   }
+  
+  if(isNaN(document.getElementById("productPrice").value))
+  {
+	  alert("The price field should contains digits only");
+	  return;
+  }
   if(document.getElementById("productDescription").value == "")
   {
 	  alert("The description field must be filled out");
