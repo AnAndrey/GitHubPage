@@ -18,7 +18,7 @@
         <h3>Order section</h3>
 		<form class="form">
 			  <p class="form__p">
-				<label class="form__label" for="productPrice">Price</label>
+				<label class="form__label" for="productPrice">Price*</label>
 				<input type="text" class="form__input2" id="productPrice">
 				<!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
 			  </p>
@@ -28,9 +28,10 @@
 				<!--span class="form__explanation">Your username can consist of the following characters: [a-ZA-Z0-9].</span-->
 			  </p>
 			  <p class="form__p">
-				<label class="form__label" for="productDescription">Description</label>
+				<label class="form__label" for="productDescription">Description*</label>
 				<textarea class="form__textarea" id="productDescription"></textarea>
 			  </p>  
+			  <a>* Required fields</a>
 			  <p class="form__cta">
 				<span class="button yellow" onclick="invoiceFunction();"><span>Invoice</span></span>
 				<span class="cancel" onclick="clearFunction();">or <a>clear</a></span>
@@ -51,6 +52,11 @@
 		<form class="form">
 			<p class="form__cta">
 				<span class="button blue" onclick="onFeedbackRequest();"><span>Feedback request</span></span>				
+			</p>
+		</form>		
+		<form class="form">
+			<p class="form__cta">
+				<span class="button red" onclick="onStartChat();"><span>Start chat</span></span>				
 			</p>
 		</form>	
       </section>

@@ -14,6 +14,17 @@ function clearFunction()
 function invoiceFunction()
 {
   var message = { type: "invoice"};
+  if(document.getElementById("productPrice").value == "")
+  {
+	  alert("The price field must be filled out");
+	  return;
+  }
+  if(document.getElementById("productDescription").value == "")
+  {
+	  alert("The description field must be filled out");
+	  return;
+  }
+  
   message.info = { description: document.getElementById("productDescription").value, 
 				  price: document.getElementById("productPrice").value,
 				  deliveryTime: document.getElementById("deliveryTime").value};
@@ -29,6 +40,11 @@ function onTrackingNumber(){
 
 function onFeedbackRequest(){
 	var message = { type: "feedback"};
+	putMessage(JSON.stringify(message));
+}
+
+function onStartChat(){
+	var message = { type: "chat"};
 	putMessage(JSON.stringify(message));
 }
 
